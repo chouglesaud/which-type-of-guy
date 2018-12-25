@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "que1": "choose profession",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q1(opt1).jpg",
+          "imgpt": "5"
+        },
+        "img2": {
+          "imgsrc": "/images/q1(opt2).jpg",
+          "imgpt": "15"
+        },
+        "img3": {
+          "imgsrc": "/images/q1(opt3).png",
+          "imgpt": "10"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "que2": "choose game",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q2(opt1).jpg",
+          "imgpt": "5"
+        },
+        "img2": {
+          "imgsrc": "/images/q2(opt2).jpg",
+          "imgpt": "10"
+        },
+        "img3": {
+          "imgsrc": "/images/q2(opt3).jpg",
+          "imgpt": "15"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "que3": "choose hairstyle",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q3(opt1).jpg",
+          "imgpt": "10"
+        },
+        "img2": {
+          "imgsrc": "/images/q3(opt2).jpg",
+          "imgpt": "15"
+        },
+        "img3": {
+          "imgsrc": "/images/q3(opt3).jpg",
+          "imgpt": "5"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "que4": "favourite shoes",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q4(opt1).jpg",
+          "imgpt": "5"
+        },
+        "img2": {
+          "imgsrc": "/images/q4(opt2).jpg",
+          "imgpt": "15"
+        },
+        "img3": {
+          "imgsrc": "/images/q4(opt3).jpg",
+          "imgpt": "10"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "que5": "dream house",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q5(opt1).jpg",
+          "imgpt": "10"
+        },
+        "img2": {
+          "imgsrc": "/images/q5(opt2).jpg",
+          "imgpt": "15"
+        },
+        "img3": {
+          "imgsrc": "/images/q5(opt3).jpg",
+          "imgpt": "5"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "que6": "choose your favourite jeans",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q6(opt1).jpg",
+          "imgpt": "15"
+        },
+        "img2": {
+          "imgsrc": "/images/q6(opt2).jpg",
+          "imgpt": "10"
+        },
+        "img3": {
+          "imgsrc": "/images/q6(opt3).jpg",
+          "imgpt": "5"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "que7": "dream car",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q7(opt1).jpg",
+          "imgpt": "10"
+        },
+        "img2": {
+          "imgsrc": "/images/q7(opt2).jpg",
+          "imgpt": "15"
+        },
+        "img3": {
+          "imgsrc": "/images/q7(opt3).jpg",
+          "imgpt": "5"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "que8": "choose movie",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q8(opt1).jpg",
+          "imgpt": "15"
+        },
+        "img2": {
+          "imgsrc": "/images/q8(opt2).jpg",
+          "imgpt": "10"
+        },
+        "img3": {
+          "imgsrc": "/images/q8(opt3).jpg",
+          "imgpt": "5"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "que9": "choose suit",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q9(opt1).jpg",
+          "imgpt": "5"
+        },
+        "img2": {
+          "imgsrc": "/images/q9(opt2).jpg",
+          "imgpt": "15"
+        },
+        "img3": {
+          "imgsrc": "/images/q9(opt3).jpg",
+          "imgpt": "10"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "que10": "choose your favoutite actor",
+      "optimg": {
+        "img1": {
+          "imgsrc": "/images/q10(opt1).jpg",
+          "imgpt": "10"
+        },
+        "img2": {
+          "imgsrc": "/images/q10(opt2).jpg",
+          "imgpt": "5"
+        },
+        "img3": {
+          "imgsrc": "/images/q10(opt3).jpg",
+          "imgpt": "15"
+        }
+      }
+    }
+  ]
+}

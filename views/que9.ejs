@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>questions</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/assets/rotation.css" media="screen and (orientation: landscape)">
+        <link href="https://fonts.googleapis.com/css?family=B612" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/questions.css">
+    </head>
+    <body>
+       <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                   <div class="row">
+                       <div class="col-sm-12">
+                            <div class="progress-bar progress-bar-striped bg-danger rounded" role="progressbar" style="width: <%=prg%>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><%=prg%>%</div>
+                       </div>
+                   </div>
+                    <div class="que_container">
+                        <div class="que">
+                            <p class="text-center question">
+                                <span id="quechange" class=" text-center badge badge-dark mybadge">
+                                <%=qn%></span>
+                                <%=que%>
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="imgcont">
+                                <div class="row justify-content-center">
+                                    <div class="imgopt">
+                                        <div class="col-lg-4 img">
+                                            <img id="img1" class=" rounded-circle" src="<%=img1%>" alt="" value="<%=pt1%>">
+                                        </div>
+                                        <div class="col-lg-4 img">
+                                            <img id="img2" class=" rounded-circle" src="<%=img2%>" alt="" value="<%=pt2%>">
+                                        </div>
+                                        <div class="col-lg-4 img">
+                                            <img id="img3" class=" rounded-circle" src="<%=img3%>" alt="" value="<%=pt3%>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--main container -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="/assets/ques.js"></script>
+        </body>
+    </html>

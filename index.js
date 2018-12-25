@@ -29,7 +29,8 @@ let questions =
                     imgsrc: '/images/q1(opt3).png',
                     imgpt: 10
                 }
-            }
+            },
+            progress: 0
         },
         {
             id: '2',
@@ -47,7 +48,8 @@ let questions =
                     imgsrc: '/images/q2(opt3).jpg',
                     imgpt: 15
                 }
-            }
+            },
+            progress: 10,
         },
         {
             id: '3',
@@ -65,7 +67,8 @@ let questions =
                     imgsrc: '/images/q3(opt3).jpg',
                     imgpt: 5
                 }
-            }
+            },
+            progress: 20
         },
         {
             id: '4',
@@ -83,7 +86,8 @@ let questions =
                     imgsrc: '/images/q4(opt3).jpg',
                     imgpt: 10
                 }
-            }
+            },
+            progress: 30
         },
         {
             id: '5',
@@ -101,7 +105,8 @@ let questions =
                     imgsrc: '/images/q5(opt3).jpg',
                     imgpt: 5
                 }
-            }
+            },
+            progress: 40
         },
         {
             id: '6',
@@ -119,7 +124,8 @@ let questions =
                     imgsrc: '/images/q6(opt3).jpg',
                     imgpt: 5
                 }
-            }
+            },
+            progress: 50
         },
         {
             id: '7',
@@ -137,7 +143,8 @@ let questions =
                     imgsrc: '/images/q7(opt3).jpg',
                     imgpt: 5
                 }
-            }
+            },
+            progress: 60
         },
         {
             id: '8',
@@ -155,7 +162,8 @@ let questions =
                     imgsrc: '/images/q8(opt3).jpg',
                     imgpt: 5
                 }
-            }
+            },
+            progress: 70
         },
         {
             id: '9',
@@ -173,7 +181,8 @@ let questions =
                     imgsrc: '/images/q9(opt3).jpg',
                     imgpt: 10
                 }
-            }
+            },
+            progress: 80
         },
         {
             id: '10',
@@ -191,7 +200,8 @@ let questions =
                     imgsrc: '/images/q10(opt3).jpg',
                     imgpt: 15
                 }
-            }
+            },
+            progress: 90
         }
     ];
 
@@ -238,56 +248,56 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 app.post('/que1', urlencoded, (req, res) => {
-    res.render('que1', { qn: questions[0].id, que: questions[0].que, img1: questions[0].optimg.img1.imgsrc, img2: questions[0].optimg.img2.imgsrc, img3: questions[0].optimg.img3.imgsrc, pt1: questions[0].optimg.img1.imgpt, pt2: questions[0].optimg.img2.imgpt, pt3: questions[0].optimg.img3.imgpt });
+    res.render('que1', { qn: questions[0].id, que: questions[0].que, img1: questions[0].optimg.img1.imgsrc, img2: questions[0].optimg.img2.imgsrc, img3: questions[0].optimg.img3.imgsrc, pt1: questions[0].optimg.img1.imgpt, pt2: questions[0].optimg.img2.imgpt, pt3: questions[0].optimg.img3.imgpt,prg: questions[0].progress });
     global.Name = req.body.name;
     console.log(Name);
 
 });
 app.get('/que2', urlencoded, (req, res) => {
-    res.render('que2', { qn: questions[1].id, que: questions[1].que, img1: questions[1].optimg.img1.imgsrc, img2: questions[1].optimg.img2.imgsrc, img3: questions[1].optimg.img3.imgsrc, pt1: questions[1].optimg.img1.imgpt, pt2: questions[1].optimg.img2.imgpt, pt3: questions[1].optimg.img3.imgpt });
+    res.render('que2', { qn: questions[1].id, que: questions[1].que, img1: questions[1].optimg.img1.imgsrc, img2: questions[1].optimg.img2.imgsrc, img3: questions[1].optimg.img3.imgsrc, pt1: questions[1].optimg.img1.imgpt, pt2: questions[1].optimg.img2.imgpt, pt3: questions[1].optimg.img3.imgpt,prg: questions[1].progress });
 
 
 });
 app.get('/que3', urlencoded, (req, res) => {
-    res.render('que3', { qn: questions[2].id, que: questions[2].que, img1: questions[2].optimg.img1.imgsrc, img2: questions[2].optimg.img2.imgsrc, img3: questions[2].optimg.img3.imgsrc, pt1: questions[2].optimg.img1.imgpt, pt2: questions[2].optimg.img2.imgpt, pt3: questions[2].optimg.img3.imgpt });
+    res.render('que3', { qn: questions[2].id, que: questions[2].que, img1: questions[2].optimg.img1.imgsrc, img2: questions[2].optimg.img2.imgsrc, img3: questions[2].optimg.img3.imgsrc, pt1: questions[2].optimg.img1.imgpt, pt2: questions[2].optimg.img2.imgpt, pt3: questions[2].optimg.img3.imgpt,prg: questions[2].progress });
     Name = req.body.name;
 
 });
 app.get('/que4', urlencoded, (req, res) => {
-    res.render('que4', { qn: questions[3].id, que: questions[3].que, img1: questions[3].optimg.img1.imgsrc, img2: questions[3].optimg.img2.imgsrc, img3: questions[3].optimg.img3.imgsrc, pt1: questions[3].optimg.img1.imgpt, pt2: questions[3].optimg.img2.imgpt, pt3: questions[3].optimg.img3.imgpt });
+    res.render('que4', { qn: questions[3].id, que: questions[3].que, img1: questions[3].optimg.img1.imgsrc, img2: questions[3].optimg.img2.imgsrc, img3: questions[3].optimg.img3.imgsrc, pt1: questions[3].optimg.img1.imgpt, pt2: questions[3].optimg.img2.imgpt, pt3: questions[3].optimg.img3.imgpt,prg: questions[3].progress });
     Name = req.body.name;
 
 });
 
 app.get('/que5', urlencoded, (req, res) => {
-    res.render('que5', { qn: questions[4].id, que: questions[4].que, img1: questions[4].optimg.img1.imgsrc, img2: questions[4].optimg.img2.imgsrc, img3: questions[4].optimg.img3.imgsrc, pt1: questions[4].optimg.img1.imgpt, pt2: questions[4].optimg.img2.imgpt, pt3: questions[4].optimg.img3.imgpt });
+    res.render('que5', { qn: questions[4].id, que: questions[4].que, img1: questions[4].optimg.img1.imgsrc, img2: questions[4].optimg.img2.imgsrc, img3: questions[4].optimg.img3.imgsrc, pt1: questions[4].optimg.img1.imgpt, pt2: questions[4].optimg.img2.imgpt, pt3: questions[4].optimg.img3.imgpt,prg: questions[4].progress });
     Name = req.body.name;
 
 
 });
 app.get('/que6', urlencoded, (req, res) => {
-    res.render('que6', { qn: questions[5].id, que: questions[5].que, img1: questions[5].optimg.img1.imgsrc, img2: questions[5].optimg.img2.imgsrc, img3: questions[5].optimg.img3.imgsrc, pt1: questions[5].optimg.img1.imgpt, pt2: questions[5].optimg.img2.imgpt, pt3: questions[5].optimg.img3.imgpt });
+    res.render('que6', { qn: questions[5].id, que: questions[5].que, img1: questions[5].optimg.img1.imgsrc, img2: questions[5].optimg.img2.imgsrc, img3: questions[5].optimg.img3.imgsrc, pt1: questions[5].optimg.img1.imgpt, pt2: questions[5].optimg.img2.imgpt, pt3: questions[5].optimg.img3.imgpt,prg: questions[5].progress });
     Name = req.body.name;
 
 
 });
 app.get('/que7', urlencoded, (req, res) => {
-    res.render('que7', { qn: questions[6].id, que: questions[6].que, img1: questions[6].optimg.img1.imgsrc, img2: questions[6].optimg.img2.imgsrc, img3: questions[6].optimg.img3.imgsrc, pt1: questions[6].optimg.img1.imgpt, pt2: questions[6].optimg.img2.imgpt, pt3: questions[6].optimg.img3.imgpt });
+    res.render('que7', { qn: questions[6].id, que: questions[6].que, img1: questions[6].optimg.img1.imgsrc, img2: questions[6].optimg.img2.imgsrc, img3: questions[6].optimg.img3.imgsrc, pt1: questions[6].optimg.img1.imgpt, pt2: questions[6].optimg.img2.imgpt, pt3: questions[6].optimg.img3.imgpt, prg: questions[6].progress });
     Name = req.body.name;
 
 });
 app.get('/que8', urlencoded, (req, res) => {
-    res.render('que8', { qn: questions[7].id, que: questions[7].que, img1: questions[7].optimg.img1.imgsrc, img2: questions[7].optimg.img2.imgsrc, img3: questions[7].optimg.img3.imgsrc, pt1: questions[7].optimg.img1.imgpt, pt2: questions[7].optimg.img2.imgpt, pt3: questions[7].optimg.img3.imgpt });
+    res.render('que8', { qn: questions[7].id, que: questions[7].que, img1: questions[7].optimg.img1.imgsrc, img2: questions[7].optimg.img2.imgsrc, img3: questions[7].optimg.img3.imgsrc, pt1: questions[7].optimg.img1.imgpt, pt2: questions[7].optimg.img2.imgpt, pt3: questions[7].optimg.img3.imgpt,prg: questions[7].progress });
     Name = req.body.name;
 
 });
 app.get('/que9', urlencoded, (req, res) => {
-    res.render('que9', { qn: questions[8].id, que: questions[8].que, img1: questions[8].optimg.img1.imgsrc, img2: questions[8].optimg.img2.imgsrc, img3: questions[8].optimg.img3.imgsrc, pt1: questions[8].optimg.img1.imgpt, pt2: questions[8].optimg.img2.imgpt, pt3: questions[8].optimg.img3.imgpt });
+    res.render('que9', { qn: questions[8].id, que: questions[8].que, img1: questions[8].optimg.img1.imgsrc, img2: questions[8].optimg.img2.imgsrc, img3: questions[8].optimg.img3.imgsrc, pt1: questions[8].optimg.img1.imgpt, pt2: questions[8].optimg.img2.imgpt, pt3: questions[8].optimg.img3.imgpt,prg: questions[8].progress });
     Name = req.body.name;
 
 });
 app.get('/que10', urlencoded, (req, res) => {
-    res.render('que10', { qn: questions[9].id, que: questions[9].que, img1: questions[9].optimg.img1.imgsrc, img2: questions[9].optimg.img2.imgsrc, img3: questions[9].optimg.img3.imgsrc, pt1: questions[9].optimg.img1.imgpt, pt2: questions[9].optimg.img2.imgpt, pt3: questions[9].optimg.img3.imgpt });
+    res.render('que10', { qn: questions[9].id, que: questions[9].que, img1: questions[9].optimg.img1.imgsrc, img2: questions[9].optimg.img2.imgsrc, img3: questions[9].optimg.img3.imgsrc, pt1: questions[9].optimg.img1.imgpt, pt2: questions[9].optimg.img2.imgpt, pt3: questions[9].optimg.img3.imgpt, prg: questions[9].progress });
     Name = req.body.name;
 
 });
@@ -375,7 +385,7 @@ app.get('/result', urlencoded, (req, res, ) => {
         res.render('result', { ans: result[3].Result, img: result[3].img, des: result[3].description, });
 
     }
-    if (points >= 135 && points <= 150) {
+    if (points >= 135 && points <= 500) {
         res.render('result', { ans: result[4].Result, img: result[4].img, des: result[4].description, });
 
     }
