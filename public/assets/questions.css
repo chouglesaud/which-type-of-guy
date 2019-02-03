@@ -1,5 +1,50 @@
 
+   body{
+    background-color: #F6F6F6;
+}
+.progress-bar{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.mybadge{
+    border-radius: 50%;
+    font-size: 15px;
+    margin-left: -10px;
+}
+.que_container
+{
+    margin-top: 1%;
+}
+.que{
+    width: 100%;
+    height: 20px;
+}
+.question{
+    font-family: monospace;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+}
+.imgcont{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.imgopt{
+    margin-top: 8px;
+}
+    
+.img{
+    margin-left: -5%;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 8px;
+}
 
+img{
+    width: 140px;
+    height: 140px;    
+}
 /* for mobile device */
 @media (min-width: 321px ) and (max-width: 480px) {
         body{

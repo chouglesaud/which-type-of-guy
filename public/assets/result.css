@@ -1,4 +1,40 @@
 /* for mobile device */
+body{
+    background-color: #F6F6F6;
+}
+
+
+.imgcont{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+img{
+    width: 200px;
+    height: 200px;    
+}
+.rescont{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    
+}
+.description p{
+  
+    display: flex;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    align-self: center;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.description h1{
+    font-family: 'Space Mono', monospace;
+}
 @media (min-width: 320px) and (max-width: 480px) {
         body{
             background-color: #F6F6F6;

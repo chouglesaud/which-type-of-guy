@@ -1,4 +1,44 @@
-
+body{
+    background-color: #F6F6F6;
+}
+/* @font-face{
+    font-family: myfont1;
+    url:('ADAM.CG%20PRO.otf');
+} */
+.outerbox{
+    border: solid 2px black;
+    width:100px;
+    margin-top: 20%;
+    padding: 10px 5px;
+}
+.outerbox h1{
+    font-family: myfont1;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.outerbox::before{
+    content: "* know your *";
+    display: block;
+    margin-top: -25px;
+    background-color: #F6F6F6;
+    text-align: center;
+    width:55%;
+    margin-left: 22.5%;
+    font-family: myfont1;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    padding:0;
+}
+form{
+    margin-top: 5%;
+}
+button{
+    width: 50%;
+    font-weight: 600;
+    padding: 0 5px;
+}
 
    /*  */
    @media (min-width: 320px) and (max-width: 480px) {
