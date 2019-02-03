@@ -4,5 +4,13 @@
 
 > ### What i learned?
 - Nodejs
-- express 
+- expressjs
 - routing
+
+> ### Which technology i used?
+- HTML
+- CSS
+- Bootstrap
+- Ajax request using jquery
+- Nodejs
+- Expressjs
