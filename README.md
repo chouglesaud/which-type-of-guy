@@ -12,6 +12,7 @@
 - HTML
 - CSS
 - Bootstrap
+- Vanila javascript
 - Ajax request using jquery
 - Nodejs
 - Expressjs
