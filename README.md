@@ -8,7 +8,7 @@
 - expressjs
 - routing
 
-> ### Which technology i used?
+> ### What i used?
 - HTML
 - CSS
 - Bootstrap
